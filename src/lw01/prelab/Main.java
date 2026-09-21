@@ -7,14 +7,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("jobs.txt");
-        if (!file.exists()) {
-            file = new File("src/lw01/prelab/jobs.txt");
-        }
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(Main.class.getResourceAsStream("jobs.txt"));
 
         List<PrintJob> jobs = new ArrayList<>();
-        Scanner scanner = new Scanner(file);
+       
 
         while (scanner.hasNext()) {
             String type = scanner.next();
