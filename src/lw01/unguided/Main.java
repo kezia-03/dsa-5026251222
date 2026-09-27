@@ -1,4 +1,4 @@
-package lw01.unguided;
+/*package lw01.unguided;
 
 import java.util.Scanner;
 
@@ -24,5 +24,5 @@ public class Main {
             System.out.println(rental[i].summary());
         }
     }
-}
+}*/
         
